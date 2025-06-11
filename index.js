@@ -13,8 +13,11 @@ app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });
 
-app.get('/api', (req, res) => {
+app.get('/api1', (req, res) => {
     res.json({
         message: 'Hello from the API!'
     });
 }
+app.get('/api', (req, res) => {
+    res.json({ message: 'API is working!' });
+});
